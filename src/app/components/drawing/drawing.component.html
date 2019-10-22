@@ -1,0 +1,18 @@
+<div ><code>{{drawingJsonData}}</code></div>
+<div class="mdl-grid">
+	<div class="mdl-cell mdl-cell--2-col"></div>
+	<div class="mdl-cell mdl-cell--8-col">
+		<h3>{{title}}</h3>
+			<div style="display: block">
+				<canvas baseChart
+					[datasets]="barChartData"
+					[labels]="barChartLabels"
+					[options]="barChartOptions"
+					[legend]="barChartLegend"
+					[chartType]="barChartType">
+				</canvas>
+			</div>
+
+	</div>
+	<div class="mdl-cell mdl-cell--2-col"></div>
+</div>
